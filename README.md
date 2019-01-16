@@ -17,8 +17,12 @@
     
     ButtonLayoutStyleTitleVB,        //文字图片垂直排列，文字在下
 
+
+
 #初始化后用该方法设置图片和文字 没有则用nil
 - (void)setName:(NSString *)title andImage:(UIImage *)image; //设置图片和文字
+
+
 
 #一些可以设置的值
 
@@ -37,12 +41,11 @@
 - (void)useHighLightStyle:(BOOL)highLightStyle; //是否高亮模式
 
 
-//菊花，开始转动会隐藏图片和文字，停止显示
 
+
+#菊花，开始转动会隐藏图片和文字，停止显示
 @property (nonatomic, strong, readonly) UIActivityIndicatorView *indicatorView; 
-
 - (void)startIndicatorAnimation; //开始菊花动画
-
 - (void)stopIndicatorAnimation;  //停止菊花动画
 
 
